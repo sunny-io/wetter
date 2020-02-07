@@ -1,3 +1,13 @@
+<?php
+
+$wetterdaten = file_get_contents("https://www.metaweather.com/api/location/638242/");
+$wetterdaten = json_decode($wetterdaten, true);
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
   <head>
@@ -15,21 +25,34 @@
         </div>
 
       <div class="rel state">
-        <img src="" alt="Wetter Icon" width="200" height="200">
+        <img src="img/<?php echo $wetterdaten["consolidated_weather"][0]["weather_state_abbr"]?>.svg" alt="Wetter Icon" width="200" height="200">
         <p>
           <span class="min-temp">
-            Hier die min. Temperatur
+            <?php  echo round($wetterdaten["consolidated_weather"][0]["min_temp"]); ?>
           </span>
 
           <span class="max-temp">
-            Hier die Max Temperatur
+          <?php  echo round($wetterdaten["consolidated_weather"][0]["max_temp"]); ?>
           </span>
         </p>
         </div>
 
         <div class="content is-large state">
           <p class="is-size-1 is-uppercase has-text-weight-bold">
-            Hier die Tagline
+            <?php
+              if($wetterdaten["consolidated_weather"][0]["weather_state_abbr"] == "c"){
+                echo "Happy Sunshine";
+              }
+
+              elseif($wetterdaten["consolidated_weather"][0]["weather_state_abbr"] == "lc"){
+                echo "Ganz OK";
+              }
+
+              else {
+                echo "Bleib im Bett";
+              }
+
+            ?>
           </p>
         </div>
       </div>
