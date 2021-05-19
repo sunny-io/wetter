@@ -134,18 +134,18 @@
         <script>
         var slider = new KeenSlider("#wetter-slider", {
             spacing: 10,
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             centered: false,
             loop: false,
             mode: "free-snap",
             dragSpeed: 1,
             breakpoints: {
                 "(min-width: 768px)": {
-                    slidesPerView: 2,
+                    slidesPerView: 2.3,
                     mode: "free-snap",
                 },
                 "(min-width: 1200px)": {
-                    slidesPerView: 3,
+                    slidesPerView: 3.3,
                     mode: "free-snap",
                 },
             },
