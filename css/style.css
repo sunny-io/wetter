@@ -1,18 +1,17 @@
 @font-face {
-  font-family: 'Inter-UI';
+  font-family: "Inter-UI";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-ui-web/InterUI-Medium.woff2')
-      format('woff2'),
-    url('../fonts/inter-ui-web/InterUI-Medium.woff') format('woff');
+  src: url("../fonts/inter-ui-web/InterUI-Medium.woff2") format("woff2"),
+    url("../fonts/inter-ui-web/InterUI-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter-UI';
+  font-family: "Inter-UI";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/inter-ui-web/InterUI-Bold.woff2') format('woff2'),
-    url('../fonts/inter-ui-web/InterUI-Bold.woff') format('woff');
+  src: url("../fonts/inter-ui-web/InterUI-Bold.woff2") format("woff2"),
+    url("../fonts/inter-ui-web/InterUI-Bold.woff") format("woff");
 }
 
 @keyframes spinAround {
@@ -160,9 +159,9 @@ button,
 input,
 select,
 textarea {
-  font-family: 'Inter-UI', BlinkMacSystemFont, -apple-system,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Inter-UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 code,
@@ -212,8 +211,8 @@ img {
   max-width: 100%;
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   vertical-align: baseline;
 }
 
@@ -264,7 +263,7 @@ table th {
 
 .is-clearfix::after {
   clear: both;
-  content: ' ';
+  content: " ";
   display: table;
 }
 
@@ -919,21 +918,21 @@ a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: 'Inter-UI', BlinkMacSystemFont, -apple-system,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: "Inter-UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-secondary {
-  font-family: 'Inter-UI', BlinkMacSystemFont, -apple-system,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: "Inter-UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-sans-serif {
-  font-family: 'Inter-UI', BlinkMacSystemFont, -apple-system,
-    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-family: "Inter-UI", BlinkMacSystemFont, -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
 }
 
 .is-family-monospace {
@@ -1587,12 +1586,7 @@ a.has-text-danger:focus {
   color: white;
 }
 .hero.is-white.is-bold {
-  background-image: linear-gradient(
-    141deg,
-    #e6e6e6 0%,
-    white 71%,
-    white 100%
-  );
+  background-image: linear-gradient(141deg, #e6e6e6 0%, white 71%, white 100%);
 }
 @media screen and (max-width: 768px) {
   .hero.is-white.is-bold .navbar-menu {
@@ -2428,7 +2422,7 @@ a.has-text-danger:focus {
 
 .min-temp::before,
 .max-temp::before {
-  content: ' ';
+  content: " ";
   background-repeat: no-repeat;
   display: inline-block;
   padding: 1rem;
@@ -2481,8 +2475,8 @@ a.has-text-danger:focus {
 /* Slider Style
 */
 
-[class^='number-slide'],
-[class*=' number-slide'] {
+[class^="number-slide"],
+[class*=" number-slide"] {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
@@ -2492,8 +2486,9 @@ a.has-text-danger:focus {
   flex-wrap: wrap;
   color: #fff;
   font-weight: 500;
-  min-height: 300px;
-  max-height: 100vh;
+  min-height: 150px;
+  max-height: 40 vh;
+  max-width: 20vw;
   padding: 2rem 1rem;
 }
 
@@ -2531,5 +2526,5 @@ a.has-text-danger:focus {
 }
 
 .section {
-  background: rgba(76, 65, 119, 1);
+  background: none;
 }

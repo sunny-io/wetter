@@ -28,7 +28,7 @@ require 'functions.php'
                         </time>
                     </div>
                     <div class="rel state">
-                        <img src='img//<?php echo $wochenwetter[0]['weather_state_abbr']; ?>.svg' alt="Wetterzustand" width="200" title="Wetterzustand">
+                        <img src="img/<?php echo $wochenwetter[0]['weather_state_abbr']; ?>.svg" alt="Wetterzustand" width="200" title="Wetterzustand">
                         <p>
                             <span class="min-temp"> 
                             <?php echo round($wochenwetter[0]['min_temp']) ?>° C
@@ -39,7 +39,7 @@ require 'functions.php'
                     </div>
 
                     <div class="content is-large state">
-                        <p class="is-size-1 is-uppercase has-text-weight-bold"> <?php echo tagline($wochenwetter[0]['weather_state_abbr']);
+                        <p class="is-size-1 is-uppercase has-text-weight-bold"> <?php echo $tagline;
                             ?>
                         </p>
                     </div>
@@ -166,12 +166,16 @@ require 'functions.php'
             mode: "free-snap",
             dragSpeed: 1,
             breakpoints: {
+                "(max-width:400px)":{
+                    slidesPerView:1.2,
+                    mode: "free-snap",
+                },
                 "(min-width: 768px)": {
-                    slidesPerView: 2.3,
+                    slidesPerView: 3.2,
                     mode: "free-snap",
                 },
                 "(min-width: 1200px)": {
-                    slidesPerView: 3.3,
+                    slidesPerView: 5,
                     mode: "free-snap",
                 },
             },
